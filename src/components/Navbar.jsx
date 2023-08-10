@@ -1,10 +1,15 @@
+import {Link, NavLink} from 'react-router-dom'
+
 import './navbar.css'
+import Logo from '../images/logo.png'
 
 const Navbar = () => {
   return (
     <nav>
         <div className="container nav_container">
-            logo
+            <Link to="/" className='logo'>
+              <img src={Logo} alt="Nav Logo"/>
+            </Link>
             nav links
             button
         </div>
