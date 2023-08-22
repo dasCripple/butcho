@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: 'Montserrat'; sans-serif;
+    font-family: 'Montserrat';
     color: var(--color-gray-200);
     line-height: 1.7;
     overflow-x: hidden;
