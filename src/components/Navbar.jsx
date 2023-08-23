@@ -1,7 +1,7 @@
 import {Link, NavLink} from 'react-router-dom'
 import Logo from '../images/logo.png'
 import {links} from '../data'
-import {GoThreeBars} from 'react-icons/go'
+import {FaBars} from "react-icons/fa";
 import  './navbar.css'
 
 const Navbar = () => {
@@ -9,28 +9,26 @@ const Navbar = () => {
     <nav>
       <div className="container nav_container">
         <Link to="/" className='logo'>
-          <img src={Logo} alt="Nav Logo" />
+            <img src={Logo} alt="Nav Logo" />
         </Link>
         <ul className='nav_links'>
           {
-            links.map(({name, path}, index) => {
-              return (
-                <li>
-                    <NavLink to={path}>{name}</NavLink>
-                </li>
-              )
-            })
+              links.map(({name, path}, index) => {
+                return (
+                  <li>
+                      <NavLink to={path}>{name}</NavLink>
+                  </li>
+                )
+              })
           }
         </ul>
         <button className="nav_toggle-btn">
-          <GoThreeBars></GoThreeBars>
+          <FaBars/>
         </button>
-      </div>        
+      </div>
     </nav>
   )
-        }
-
-
+}
 
 export default Navbar
 

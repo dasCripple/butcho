@@ -27,8 +27,9 @@
     --transition: all 500ms ease;
 }
 
+/* General */
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-gray-200);
     line-height: 1.7;
     overflow-x: hidden;
