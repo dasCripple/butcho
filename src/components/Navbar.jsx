@@ -2,7 +2,7 @@ import {Link, NavLink} from 'react-router-dom'
 import Logo from '../images/logo.png'
 import {links} from '../data'
 import {FaBars} from 'react-icons/go'
-import './navbar.css'
+import  './navbar.css'
 
 const Navbar = () => {
   return (
